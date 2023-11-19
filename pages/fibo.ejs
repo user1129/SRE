@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SRE</title>
+    <link rel="stylesheet" href="/theme.css" />
+  </head>
+  <body>
+    <h1>Fibo Calculator</h1>
+    <form action="/fibo" method="post">
+      <div class="form-control">
+        <input name="text" type="text" placeholder="add log here..." />
+      </div>
+      <button type="submit" class="btn primary">Calculate</button>
+      <a class="btn primary" href="/"> Previous </a>
+    </form>
+    <ul>
+      <% for (let i = 0; i < fibos.length; i++) {%>
+      <li><%= fibos[i] %></li>
+      <% } %>
+    </ul>
+  </body>
+</html>
